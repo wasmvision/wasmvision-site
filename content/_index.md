@@ -18,6 +18,7 @@ title: "wasmVision Home"
 {{< /blocks/cover >}}
 
 {{% blocks/lead color="secondary" %}}
+
 wasmVision gets you going with computer vision.
 
 It provides a high-performance computer vision processing engine that is designed to be customized and extended using WebAssembly.
