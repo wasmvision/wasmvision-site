@@ -26,8 +26,6 @@ wasmVision gets you going with computer vision using WebAssembly.
 
 It provides a high-performance computer vision processing engine that is designed to be customized and extended using WebAssembly.
 
-Ready to get started? [Click here](getting-started).
-
 {{% /blocks/lead %}}
 
 {{< blocks/section color="primary-light" type="row">}}
@@ -45,3 +43,11 @@ Ready to get started? [Click here](getting-started).
     Output results to a stream or video file
 {{% /blocks/feature %}}
 {{< /blocks/section >}}
+
+{{% blocks/lead color="secondary" %}}
+
+Use the built-in processors for face detection, edge detection, and other common tasks. You can also create your own processors using Go, Rust, or the C programming language.
+
+Ready to get started? [Click here](getting-started).
+
+{{% /blocks/lead %}}
