@@ -1,0 +1,25 @@
+{
+    "name": "wasmvision-site",
+    "version": "1.0.0",
+    "description": "wasmVision website",
+    "main": "index.js",
+    "dependencies": {},
+    "devDependencies": {
+      "autoprefixer": "^10.4.19",
+      "postcss": "^8.4.40",
+      "postcss-cli": "^11.0.0"
+    },
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/wasmvision/wasmvision-site.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/wasmvision/wasmvision-site/issues"
+    },
+    "homepage": "https://github.com/wasmvision/wasmvision-site#readme"
+  }
