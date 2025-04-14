@@ -1,13 +1,6 @@
-# Default build settings
 [build]
   command = "hugo"
+  publish = "public"
 
-# "production" environment specific build settings
 [build.environment]
-  NODE_VERSION = "20.16.0" # LTS version
-  HUGO_VERSION = "0.129.0"
-  GO_VERSION = "1.22.x" # any reasonably recent version
-
-# "production" environment specific build settings
-[context.release.environment]
-  HUGO_ENV = "production"
+  HUGO_VERSION = "0.135.0"
