@@ -3,7 +3,7 @@
 title: "Output"
 linkTitle: "Output"
 type: "docs"
-weight: 35
+weight: 20
 description: >
   About outputting video or images from wasmVision.
 ---

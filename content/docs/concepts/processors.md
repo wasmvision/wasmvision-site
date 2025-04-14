@@ -3,7 +3,7 @@
 title: "Processors"
 linkTitle: "Processors"
 type: "docs"
-weight: 35
+weight: 15
 description: >
   About wasmVision processors.
 ---

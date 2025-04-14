@@ -3,7 +3,7 @@
 title: "Capture"
 linkTitle: "Capture"
 type: "docs"
-weight: 35
+weight: 10
 description: >
   About capturing video using wasmVision.
 ---
