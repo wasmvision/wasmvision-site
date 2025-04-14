@@ -16,3 +16,27 @@ title: "wasmVision Home"
 	<p class="h2 mt-5">Get going with computer vision using WebAssembly</p>
 </div>
 {{< /blocks/cover >}}
+
+{{% blocks/lead color="secondary" %}}
+wasmVision gets you going with computer vision.
+
+It provides a high-performance computer vision processing engine that is designed to be customized and extended using WebAssembly.
+
+Ready to get started? [Click here](getting-started).
+
+{{% /blocks/lead %}}
+
+{{< blocks/section color="primary" type="row" >}}
+{{% blocks/feature icon="fab fa-github" title="TinyGo on Github" url="https://github.com/wasmvision/wasmvision" %}}
+See the code here
+{{% /blocks/feature %}}
+
+{{% blocks/feature icon="fab fa-mastodon" title="TinyGo on Mastodon" url="https://mastodon.social/@wasmvision" %}}
+Join us on Mastodon
+{{% /blocks/feature %}}
+
+{{% blocks/feature icon="fab fa-bluesky" title="TinyGo on Bluesky" url="https://bsky.app/profile/wasmvision.com" %}}
+Join us on Bluesky
+{{% /blocks/feature %}}
+
+{{< /blocks/section >}}
