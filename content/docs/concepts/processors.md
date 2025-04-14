@@ -14,7 +14,7 @@ Processors can filter images, analyze them, and modify them using traditional co
 
 Processors can also use deep neural networks and other machine learning algorithms, and can even download the models they need automatically.
 
-See the [processors directory](../processors/) for pre-compiled processors you can try out right away.
+See the [Processors list](/docs/reference/processors) for pre-compiled processors you can try out right away.
 
 Processors can be written in [Go](#go), [Rust](#rust), or the [C programming language](#c).
 

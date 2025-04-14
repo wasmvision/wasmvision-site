@@ -10,6 +10,8 @@ description: >
 
 You can write new processors for wasmVision using Go, Rust, or the C programming languages.
 
+See the [Processors list](/docs/reference/processors) if you are looking for pre-compiled processors you can try out right away.
+
 ## Go
 
 Many of the processors in this repo have been written using TinyGo as an example of some of the things you can do:
