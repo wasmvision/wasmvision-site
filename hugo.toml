@@ -1,6 +1,6 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://wasmvision.com/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'wasmVision'
 [module]
 proxy = "direct"
 [[module.imports]]
