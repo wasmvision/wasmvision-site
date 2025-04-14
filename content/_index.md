@@ -22,16 +22,14 @@ title: "wasmVision Home"
 
 {{% blocks/lead color="secondary" %}}
 
-wasmVision gets you going with computer vision using WebAssembly.
-
-It provides a high-performance processing engine with advanced algorithms and vision models, that is designed to be customized and extended using WebAssembly.
+wasmVision is a high-performance computer vision processing engine with advanced algorithms and vision models, that is designed to be customized and extended using WebAssembly.
 
 {{% /blocks/lead %}}
 
 {{< blocks/section color="primary-light" type="row">}}
 {{% blocks/feature icon="fa fa-video-camera" title="Capture" url="docs/concepts/capture" %}}
-    Capture video from a camera,
-    video file, or stream
+    Capture video from cameras,
+    video files, or streams
 {{% /blocks/feature %}}
 
 {{% blocks/feature icon="fa fa-cogs" title="Process" url="docs/concepts/processors" %}}
