@@ -24,7 +24,7 @@ title: "wasmVision Home"
 
 wasmVision gets you going with computer vision using WebAssembly.
 
-It provides a high-performance computer vision processing engine that is designed to be customized and extended using WebAssembly.
+It provides a high-performance processing engine with advanced algorithms and vision models, that is designed to be customized and extended using WebAssembly.
 
 {{% /blocks/lead %}}
 
