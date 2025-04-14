@@ -45,7 +45,7 @@ wasmVision processors call OpenCV functions implemented by the wasmVision engine
 
 Full documentation of the computer vision functions supported by the wasmCV interface definitions is here:
 
-https://wasmcv.org/docs/0.7.0/
+https://wasmcv.org/docs/0.8.1/
 
 The repository with the wasmCV interface and bindings can be found here:
 

@@ -51,7 +51,7 @@ The wasmVision engine. Includes platform capabilities such as MJPEG streaming an
 
 ## Capture
 
-This is how wasmVision can capture or import images or video to be processed from a connected webcam, from files, or from streams.
+This is how wasmVision can capture or import images or video to be processed from a connected webcam, from files, or from streams. For more information see [Capture](/docs/concepts/capture).
 
 ## Devices
 
@@ -63,7 +63,7 @@ The wasmVision runtime consists of the WebAssembly runtime engine (currently Waz
 
 ## Processors
 
-The image processing modules that are used by wasmVision. These are modules written using Go, Rust, or C, and compiled into WebAssembly. They use the [wasmCV interface](https://github.com/wasmvision/wasmcv) and the [wasmVision platform interface](https://github.com/wasmvision/wasmvision-sdk). See [processors directory](../processors/) for several processors you can use, or use as examples.
+The image processing modules that are used by wasmVision. These are modules written using Go, Rust, or C, and compiled into WebAssembly. They use the [wasmCV interface](https://github.com/wasmvision/wasmcv) and the [wasmVision platform interface](https://github.com/wasmvision/wasmvision-sdk). For more information see [Processors](/docs/concepts/processors/).
 
 ## OpenCV
 
@@ -81,10 +81,10 @@ The wasmVision platform capabilities provide essential services for processing m
 
 ## MCP Server
 
-wasmVision includes experimental support for the [Model Context Protocol (MCP)](https://modelcontextprotocol.info/) by providing a [(MCP) Server](https://modelcontextprotocol.info/specification/draft/server/). See [MCP](./mcp.md) for more information.
+wasmVision includes experimental support for the [Model Context Protocol (MCP)](https://modelcontextprotocol.info/) by providing a [(MCP) Server](https://modelcontextprotocol.info/specification/draft/server/). See [MCP](/docs/concepts/mcp) for more information.
 
 ## CUDA
 
 wasmVision includes experimental support for GPU acceleration using [CUDA](https://en.wikipedia.org/wiki/CUDA).
 
-For more information, see [using wasmVision with CUDA](./cuda.md)
+See [using wasmVision with CUDA](/docs/concepts/cuda) for more information.
