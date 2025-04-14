@@ -2,7 +2,7 @@
 title: "wasmVision Config Files"
 linkTitle: "Config Files"
 type: "docs"
-weight: 35
+weight: 10
 description: >
   About wasmVision Config Files
 ---
