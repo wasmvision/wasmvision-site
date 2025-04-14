@@ -7,9 +7,9 @@ title: "wasmVision Home"
 ![wasmVision Logo](images/wasmvision-logo-icon-transparent.png)
 
 <p class="display-1 mt-0 mt-md-5 pb-4">wasmVision</p>
+<p class="h2 mt-md-5 pb-4">Get going with computer vision</p>
 
 <div class="mx-auto">
-	<p class="h2 mt-5">Get going with computer vision</p>
 	<a class="btn btn-lg btn-primary mr-3 mb-4" href="{{< relref "/getting-started" >}}">
 		Get Started <i class="fas fa-arrow-alt-circle-right ml-2"></i>
 	</a>
