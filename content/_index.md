@@ -2,9 +2,11 @@
 title: "wasmVision Home"
 ---
 
-{{< blocks/cover title="" image_anchor="top" height="full" color="primary" >}}
+{{< blocks/cover title="" image_anchor="top" height="min" color="primary" >}}
 
-![wasmVision Logo](images/wasmvision-logo-transparent-white.png)
+![wasmVision Logo](images/wasmvision-logo-icon-transparent.png)
+
+<p class="display-1 mt-0 mt-md-5 pb-4">wasmVision</p>
 
 <div class="mx-auto">
 	<a class="btn btn-lg btn-primary mr-3 mb-4" href="{{< relref "/getting-started" >}}">
@@ -23,23 +25,21 @@ wasmVision gets you going with computer vision using WebAssembly.
 
 It provides a high-performance computer vision processing engine that is designed to be customized and extended using WebAssembly.
 
-Capture video from a camera, video file, or stream > Process the video frames using computer vision algorithms and machine learning models > Output the results to a stream or video file
-
 Ready to get started? [Click here](getting-started).
 
 {{% /blocks/lead %}}
 
-{{< blocks/section color="primary" type="row" >}}
-{{% blocks/feature icon="fab fa-github" title="wasmVision on Github" url="https://github.com/wasmvision/wasmvision" %}}
-See the code here
+{{< blocks/section color="primary-light" type="row">}}
+{{% blocks/feature icon="fa fa-video-camera" title="Capture" url="#" %}}
+    Capture video from a camera, video file, or stream
 {{% /blocks/feature %}}
 
-{{% blocks/feature icon="fab fa-mastodon" title="wasmVision on Mastodon" url="https://mastodon.social/@wasmvision" %}}
-Join us on Mastodon
+{{% blocks/feature icon="fa fa-cogs" title="Process" url="#" %}}
+    Process the video frames using computer vision
+    algorithms and machine learning models
 {{% /blocks/feature %}}
 
-{{% blocks/feature icon="fab fa-bluesky" title="wasmVision on Bluesky" url="https://bsky.app/profile/wasmvision.com" %}}
-Join us on Bluesky
+{{% blocks/feature icon="fa fa-film" title="Output" url="https://bsky.app/profile/wasmvision.com" %}}
+    Output the results to a stream or video file
 {{% /blocks/feature %}}
-
 {{< /blocks/section >}}
