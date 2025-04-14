@@ -31,15 +31,16 @@ Ready to get started? [Click here](getting-started).
 
 {{< blocks/section color="primary-light" type="row">}}
 {{% blocks/feature icon="fa fa-video-camera" title="Capture" url="#" %}}
-    Capture video from a camera, video file, or stream
+    Capture video from a camera,
+    video file, or stream
 {{% /blocks/feature %}}
 
 {{% blocks/feature icon="fa fa-cogs" title="Process" url="#" %}}
-    Process the video frames using computer vision
+    Process video using computer vision
     algorithms and machine learning models
 {{% /blocks/feature %}}
 
 {{% blocks/feature icon="fa fa-film" title="Output" url="https://bsky.app/profile/wasmvision.com" %}}
-    Output the results to a stream or video file
+    Output results to a stream or video file
 {{% /blocks/feature %}}
 {{< /blocks/section >}}
