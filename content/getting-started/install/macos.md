@@ -7,7 +7,7 @@ description: >
   macOS install guide
 ---
 
-**NOTE: wasmVision currently runs on M-series processors only when using the Homebrew installer. You must install from source to use Intel processors.**
+**NOTE: wasmVision on macOS requires M-series processors if installing with Homebrew. To use macOS on Intel processors, you must install from source.**
 
 Install wasmVision on macOS using Homebrew:
 

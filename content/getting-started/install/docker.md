@@ -3,6 +3,8 @@ title: "Docker"
 linkTitle: "Docker"
 type: "docs"
 weight: 55
+description: >
+  Docker install guide
 ---
 
 **NOTE for macOS users: camera input does not work with Docker on macOS. File sources only.**
