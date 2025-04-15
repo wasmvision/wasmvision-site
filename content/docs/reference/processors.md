@@ -56,6 +56,12 @@ wasmVision processor that detects edges using a model called Dense Extreme Incep
 
 https://github.com/wasmvision/wasmvision/tree/main/processors/edge-detect
 
+## face-counter.wasm
+
+wasmVision processor that counts the average number of previously detected faces, and saves it to the Processor datastore.
+
+https://github.com/wasmvision/wasmvision/tree/main/processors/face-counter
+
 ## face-expression.wasm
 
 ![face-expression](/images/face-expression-processor.png)

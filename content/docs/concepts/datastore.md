@@ -8,7 +8,7 @@ description: >
   About the wasmVision Datastore.
 ---
 
-wasmVision provides access to a key-value store for saving and retrieving data associated either with specific image frames, or else with specific processors.
+wasmVision provides access to a data store for saving and retrieving information associated either with specific image frames, or else with specific processors.
 
 ## Datastore Architecture
 
@@ -37,7 +37,7 @@ Current backends:
 
 - In-Memory (default)
 - [BoltDB](https://github.com/etcd-io/bbolt)
-- [Redis](https://github.com/redis/redis) or compatible KV stores
+- [Redis](https://github.com/redis/redis) or compatible key-value stores
 
 ## Datastore Usage
 
