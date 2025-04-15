@@ -3,7 +3,7 @@
 title: "Architecture"
 linkTitle: "Architecture"
 type: "docs"
-weight: 35
+weight: 10
 description: >
   About the wasmVision architecture.
 ---
@@ -76,7 +76,7 @@ Machine learning models used for computer vision that can be used directly by pr
 
 ## Platform
 
-The wasmVision platform capabilities provide essential services for processing modules such as logging and access to configuration information. See [Platform](/docs/concepts/platform) for more information.
+The wasmVision platform capabilities provide essential services for processing modules such as logging and access to persistent data. See [Platform](/docs/concepts/platform) for more information.
 
 ## MCP Server
 

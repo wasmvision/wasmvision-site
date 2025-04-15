@@ -3,7 +3,7 @@
 title: "MCP"
 linkTitle: "MCP"
 type: "docs"
-weight: 35
+weight: 55
 description: >
   Using wasmVision an an MCP Server
 ---

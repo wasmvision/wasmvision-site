@@ -24,7 +24,7 @@ Utilities for making HTTP requests to external servers, enabling communication a
 
 ## Datastore
 
-Access to a key-value store for saving and retrieving data associated either with specific image frames, or else with specific processors.
+Access to a key-value store for saving and retrieving data associated either with specific image frames, or else with specific processors. See [Datastore](/docs/concepts/datastore) for more information.
 
 ## Time
 
