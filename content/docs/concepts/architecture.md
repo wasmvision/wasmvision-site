@@ -22,7 +22,8 @@ flowchart TD
             Runtime[WASM Runtime]
             Capture--frame-->Runtime
             Capture<-->OpenCV
-            Runtime<-->OpenCV
+            Runtime<-->Models
+            OpenCV<-->Models
             OpenCV<-->CUDA
             subgraph Platform
                 logging
@@ -68,6 +69,10 @@ The image processing modules that are used by wasmVision. These are modules writ
 ## OpenCV
 
 The computer vision processing capabilities implemented using [OpenCV](https://github.com/opencv/opencv) with the [GoCV language wrappers](https://github.com/hybridgroup/gocv). The [wasmCV programming API](https://wasmcv.org/) is used for this integration.
+
+## Models
+
+Machine learning models used for computer vision that can be used directly by processors. There are "well-known" models that can be automatically downloaded by wasmVision when they are needed by a specific Processor. See the [Models list](/docs/reference/models) for more information.
 
 ## Platform
 

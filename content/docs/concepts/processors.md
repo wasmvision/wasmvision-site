@@ -30,6 +30,8 @@ flowchart TD
             Config
         end
         Runtime<-->platform
+        Runtime<-->Models
+        OpenCV<-->Models
     end
     subgraph processors
         Runtime-- input frame -->processor.wasm
@@ -56,3 +58,7 @@ https://github.com/wasmvision/wasmcv
 In addition, the wasmVision engine has functions that are part of the platform itself. For example, processors need logging, the ability to load configuration data at runtime, and other capabilities. The repository with the wasmVision platform interfaces is here:
 
 https://github.com/wasmvision/wasmvision-sdk
+
+### Models
+
+Machine learning models for computer vision that can be used by Processors. See the [Models list](/docs/reference/models) for more information.
