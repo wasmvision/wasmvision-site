@@ -1,7 +1,7 @@
 
 ---
-title: "wasmVision Platform"
-linkTitle: "Platform"
+title: "wasmVision Platform API"
+linkTitle: "Platform API Docs"
 type: "docs"
 weight: 20
 description: >

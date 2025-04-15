@@ -1,7 +1,7 @@
 
 ---
 title: "Creating your own processors"
-linkTitle: "Processors"
+linkTitle: "Creating Processors"
 type: "docs"
 weight: 10
 description: >

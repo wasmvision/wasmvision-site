@@ -1,7 +1,7 @@
 
 ---
-title: "CUDA"
-linkTitle: "CUDA"
+title: "Using CUDA"
+linkTitle: "Using CUDA"
 type: "docs"
 weight: 35
 description: >

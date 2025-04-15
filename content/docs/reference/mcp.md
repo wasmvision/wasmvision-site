@@ -1,6 +1,6 @@
 ---
 title: "MCP Server Resources"
-linkTitle: "MCP"
+linkTitle: "MCP Resource List"
 type: "docs"
 weight: 35
 description: >

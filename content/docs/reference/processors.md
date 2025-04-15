@@ -1,11 +1,11 @@
 
 ---
 title: "wasmVision Processors"
-linkTitle: "Processors"
+linkTitle: "Processor List"
 type: "docs"
-weight: 20
+weight: 10
 description: >
-  wasmVision Processors
+  wasmVision Built-in Processors
 ---
 
 These are the processors that are built-in to wasmVision and can be automatically downloaded and run.
