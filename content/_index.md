@@ -24,6 +24,8 @@ title: "wasmVision Home"
 
 wasmVision is a high-performance computer vision processing engine with advanced algorithms and vision models, that is designed to be customized and extended using WebAssembly.
 
+It can run on embedded devices or run in the cloud, and can take advantage of hardware acceleration.
+
 {{% /blocks/lead %}}
 
 {{< blocks/section color="primary-light" type="row">}}
