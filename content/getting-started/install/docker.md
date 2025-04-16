@@ -32,3 +32,7 @@ docker run --privileged --network=host ghcr.io/wasmvision/wasmvision:main run -p
 Point your browser to `http://localhost:8080` and you should see the output.
 
 ![mjpeg-stream](/images/mjpeg-stream.png)
+
+## Next steps
+
+Now that you have installed wasmVision take a look at [Next Steps](/getting-started/next-steps) for what to do next.

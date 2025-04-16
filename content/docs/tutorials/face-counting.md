@@ -73,21 +73,12 @@ wasmvision run -f facecount.toml
 You should see output similar to the following including the JSON data of the face counts:
 
 ```
-...
-2025/04/16 11:17:50 INFO Performed face detection on image 257856265
-2025/04/16 11:17:50 INFO Performed face detection on image 365804572
-2025/04/16 11:17:50 INFO Performed face detection on image 156027407
 2025/04/16 11:17:50 INFO {"timestamp":"2025-04-16T09:17:50.882075Z","average-faces-seen":1}
-2025/04/16 11:17:50 INFO Performed face detection on image 374971007
-2025/04/16 11:17:51 INFO Performed face detection on image 399005532
-2025/04/16 11:17:51 INFO Performed face detection on image 55219970
-2025/04/16 11:17:51 INFO Performed face detection on image 131222395
-...
 ```
 
 ## Save data to BoltDB
 
-Next let us switch to using the BoltDB database to store the face counts on disk.
+Next switch to using the BoltDB database to store the face counts on disk.
 
 Add a new `datastorage` key with the value `"boltdb"` into the `[main]` section.
 

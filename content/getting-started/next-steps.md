@@ -5,7 +5,7 @@ linkTitle: "Next steps"
 type: "docs"
 weight: 30
 description: >
-  What to do next now that you have installed wasmVision.
+  What to do now that you have installed wasmVision.
 ---
 
 Now that you have installed wasmVision, here are some possible next steps.
