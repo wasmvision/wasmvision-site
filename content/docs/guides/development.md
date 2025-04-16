@@ -3,7 +3,7 @@
 title: "Development builds"
 linkTitle: "Development builds"
 type: "docs"
-weight: 35
+weight: 50
 description: >
   About wasmVision development.
 ---

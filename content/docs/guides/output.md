@@ -2,7 +2,7 @@
 title: "How to Output"
 linkTitle: "How to Output"
 type: "docs"
-weight: 10
+weight: 20
 description: >
   How to output video using wasmVision.
 ---

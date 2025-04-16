@@ -3,7 +3,7 @@
 title: "Using wasmVision"
 linkTitle: "Usage"
 type: "docs"
-weight: 20
+weight: 30
 description: >
   About common ways to use wasmVision.
 ---

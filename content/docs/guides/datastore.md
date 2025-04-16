@@ -2,7 +2,7 @@
 title: "Using the Datastore"
 linkTitle: "Using the Datastore"
 type: "docs"
-weight: 15
+weight: 30
 description: >
   How to use the wasmVision Datastore.
 ---

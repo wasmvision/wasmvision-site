@@ -3,7 +3,7 @@
 title: "Creating your own processors"
 linkTitle: "Creating Processors"
 type: "docs"
-weight: 10
+weight: 40
 description: >
   About writing your own wasmVision processors.
 ---

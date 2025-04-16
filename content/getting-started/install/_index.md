@@ -2,7 +2,7 @@
 title: "Quick install guide"
 linkTitle: "Quick install"
 type: "docs"
-weight: 25
+weight: 10
 description: >
   Quick install guide
 ---

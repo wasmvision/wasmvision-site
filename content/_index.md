@@ -38,13 +38,16 @@ wasmVision is a high-performance computer vision processing engine with advanced
 {{% /blocks/feature %}}
 
 {{% blocks/feature icon="fa fa-film" title="Output" url="docs/concepts/output" %}}
-    Output results to a stream or video file
+    Output results to a stream,
+	video file, or data store
 {{% /blocks/feature %}}
 {{< /blocks/section >}}
 
 {{% blocks/lead color="secondary" %}}
 
-Use the built-in processors for face detection, edge detection, and other common tasks. You can also create your own processors using Go, Rust, or the C programming language.
+Use the built-in processors for face detection, edge detection, and other common tasks.
+
+You can also create your own processors using Go, Rust, and C programming languages.
 
 Ready to get started? [Click here](getting-started).
 
