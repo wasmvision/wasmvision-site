@@ -21,9 +21,11 @@ wasmVision can use BoltDB as a processor datastore backend.
 
 When using wasmVision, this is configured by using the `--datastorage=boltdb` flag.
 
-Set the `WASMVISION_STORAGE_BOLTDB_FILENAME` environment variable to set the BoltDB database file to use.
+### Environment
 
-Set the `WASMVISION_STORAGE_BOLTDB_FILEMODE` environment variable to set the BoltDB database file mode to use, if needed.
+`WASMVISION_STORAGE_BOLTDB_FILENAME` - BoltDB database file to use.
+
+`WASMVISION_STORAGE_BOLTDB_FILEMODE` - BoltDB database file mode to use, if needed.
 
 ## Redis
 
@@ -31,5 +33,28 @@ wasmVision can use Redis, or other KV stores that are compatible with Redis, as 
 
 When using wasmVision, this is configured by using the `--datastorage=redis` flag.
 
-Set the `WASMVISION_STORAGE_REDIS_URL` environment variable to set the Redis server URL to use.
+### Environment
 
+`WASMVISION_STORAGE_REDIS_URL` - Redis server URL to use.
+
+## NATS
+
+wasmVision can use the [NATS message queue](https://nats.io/) as a processor datastore backend.
+
+With this backend, only `Set` operations can be used, since they are sending messages and not necessarily persisting those messages in any database.
+
+When using wasmVision, this is configured by using the `--datastorage=nats` flag.
+
+### Environment
+
+`WASMVISION_STORAGE_NATS_URL` - NATS server URL to use.
+
+`WASMVISION_STORAGE_NATS_USER_CREDENTIALS` - NATS user credentials.
+
+`WASMVISION_STORAGE_NATS_NKEY_FILE` - NATS nkey file.
+
+`WASMVISION_STORAGE_NATS_CERT_FILE` - NATS certificate.
+
+`WASMVISION_STORAGE_NATS_KEY_FILE` - NATS key file.
+
+`WASMVISION_STORAGE_NATS_CA_CERT` - NATS CA certificate.

@@ -18,14 +18,16 @@ flowchart TD
         Frames[Frame data]
         Processors[Processor data]
         Datastorage[Datastorage interface]
-        Memstore[In-memory datastore backend]
-        BoltDB[BoltDB datastore backend]
-        Redis[Redis datastore backend]
+        Memstore[In-memory datastore]
+        BoltDB
+        Redis
+        NATS[NATS message queue]
         Frames-->Memstore
         Processors-->Datastorage
         Datastorage-->Memstore
         Datastorage-->BoltDB
         Datastorage-->Redis
+        Datastorage-->NATS
     end
 ```
 
@@ -38,6 +40,7 @@ Current backends:
 - In-Memory (default)
 - [BoltDB](https://github.com/etcd-io/bbolt)
 - [Redis](https://github.com/redis/redis) or compatible key-value stores
+- [NATS](https://github.com/nats-io) message queue
 
 ## Datastore Usage
 
