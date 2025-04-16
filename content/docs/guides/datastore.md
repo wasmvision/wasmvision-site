@@ -9,6 +9,8 @@ description: >
 
 wasmVision provides access to a configurable key-value store for saving and retrieving data associated with specific processors.
 
+See [Platform API - Datastore](/docs/reference/platform#a-idwasmvision_platform_datastoreaimport-interface-wasmvisionplatformdatastore) for information on how to call the datastore from your own custom Processors.
+
 ## In-memory
 
 By default, wasmVision uses an in-memory data store.
