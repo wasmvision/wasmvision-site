@@ -25,9 +25,14 @@ Point your browser to `http://localhost:8080` and you should see the output.
 
 Next, let's do the same thing as in the first step, but use a configuration file so we can more easily change the various parameters needed for our face counting application.
 
-Create a new file named `facecount.toml` and make sure it contains the following data:
+wasmVision supports both `TOML` and `YAML` formats for configuration files.
 
-```toml
+Create a new file named `facecount.toml` (or `facecount.yaml`) and make sure it contains the following data:
+
+{{< tabpane text=true >}}
+  {{% tab header="**Config**:" disabled=true /%}}
+  {{% tab header="TOML" lang="en" %}}
+  ```toml
 [main]
 logging = "warn"
 
@@ -36,14 +41,37 @@ pipeline = [
     "facedetectyn.wasm"
 ]
 ```
+  {{% /tab %}}
+  {{% tab header="YAML" lang="en" %}}
+```yaml
+main:
+  logging: "warn"
+
+processing:
+  pipeline:
+    - "facedetectyn.wasm"
+```
+  {{< /tab >}}
+{{< /tabpane >}}
+
 
 ## Run using config file
 
 Now we can run wasmVision again, but this time using the config file we just created:
 
+{{< tabpane text=true >}}
+  {{% tab header="**Config**:" disabled=true /%}}
+  {{% tab header="TOML" lang="en" %}}
 ```bash
 wasmvision run -f facecount.toml
 ```
+  {{% /tab %}}
+  {{% tab header="YAML" lang="en" %}}
+```bash
+wasmvision run -f facecount.yaml
+```
+  {{< /tab >}}
+{{< /tabpane >}}
 
 Point your browser to `http://localhost:8080` and you should see the same output.
 
@@ -53,9 +81,13 @@ Now we will add another processor. This processor is the built-in `face-counter.
 
 Change the logging to `info` so we can see the output on the terminal:
 
-```toml
+{{< tabpane text=true >}}
+  {{% tab header="**Config**:" disabled=true /%}}
+  {{% tab header="TOML" lang="en" %}}
+  ```toml
 [main]
 logging = "info"
+datastorage = "boltdb"
 
 [processing]
 pipeline = [
@@ -63,12 +95,37 @@ pipeline = [
     "face-counter.wasm"
 ]
 ```
+  {{% /tab %}}
+  {{% tab header="YAML" lang="en" %}}
+```yaml
+main:
+  logging: "info"
+  datastoreage: "boltdb"
+
+processing:
+  pipeline:
+    - "facedetectyn.wasm"
+    - "face-counter.wasm"
+```
+  {{< /tab >}}
+{{< /tabpane >}}
+
 
 Run wasmVision again:
 
+{{< tabpane text=true >}}
+  {{% tab header="**Config**:" disabled=true /%}}
+  {{% tab header="TOML" lang="en" %}}
 ```bash
 wasmvision run -f facecount.toml
 ```
+  {{% /tab %}}
+  {{% tab header="YAML" lang="en" %}}
+```bash
+wasmvision run -f facecount.yaml
+```
+  {{< /tab >}}
+{{< /tabpane >}}
 
 You should see output similar to the following including the JSON data of the face counts:
 
@@ -80,11 +137,14 @@ You should see output similar to the following including the JSON data of the fa
 
 Next switch to using the BoltDB database to store the face counts on disk.
 
-Add a new `datastorage` key with the value `"boltdb"` into the `[main]` section.
+Add a new `datastorage` key with the value `"boltdb"` into the `main]` section.
 
 Also change the logging back to `warn` to reduce the amount of output on the terminal:
 
-```toml
+{{< tabpane text=true >}}
+  {{% tab header="**Config**:" disabled=true /%}}
+  {{% tab header="TOML" lang="en" %}}
+  ```toml
 [main]
 logging = "warn"
 datastorage = "boltdb"
@@ -95,6 +155,21 @@ pipeline = [
     "face-counter.wasm"
 ]
 ```
+  {{% /tab %}}
+  {{% tab header="YAML" lang="en" %}}
+```yaml
+main:
+  logging: "warn"
+  datastoreage: "boltdb"
+
+processing:
+  pipeline:
+    - "facedetectyn.wasm"
+    - "face-counter.wasm"
+```
+  {{< /tab >}}
+{{< /tabpane >}}
+
 
 We need to tell wasmVision where the database file is located using the `WASMVISION_STORAGE_BOLTDB_FILENAME` environmental variable:
 
@@ -104,9 +179,19 @@ export WASMVISION_STORAGE_BOLTDB_FILENAME="facedata.db"
 
 Now run the command again:
 
+{{< tabpane text=true >}}
+  {{% tab header="**Config**:" disabled=true /%}}
+  {{% tab header="TOML" lang="en" %}}
 ```bash
 wasmvision run -f facecount.toml
 ```
+  {{% /tab %}}
+  {{% tab header="YAML" lang="en" %}}
+```bash
+wasmvision run -f facecount.yaml
+```
+  {{< /tab >}}
+{{< /tabpane >}}
 
 The face count data should now be getting stored into the BoltDB database.
 
@@ -153,7 +238,10 @@ To do this add a new `[configuration]` section to the file, and set the `detect-
 
 This configuration setting is used by the `facedetectyn.wasm` processor to turn on or off the drawing of the detected faces on the output.
 
-```toml
+{{< tabpane text=true >}}
+  {{% tab header="**Config**:" disabled=true /%}}
+  {{% tab header="TOML" lang="en" %}}
+  ```toml
 [main]
 logging = "warn"
 datastorage = "boltdb"
@@ -167,12 +255,39 @@ pipeline = [
 [configuration]
 detect-draw-faces="false"
 ```
+  {{% /tab %}}
+  {{% tab header="YAML" lang="en" %}}
+```yaml
+main:
+  logging: "warn"
+  datastoreage: "boltdb"
+
+processing:
+  pipeline:
+    - "facedetectyn.wasm"
+    - "face-counter.wasm"
+
+configuration:
+  detect-draw-faces: "false"
+```
+  {{< /tab >}}
+{{< /tabpane >}}
 
 Run the command again:
 
+{{< tabpane text=true >}}
+  {{% tab header="**Config**:" disabled=true /%}}
+  {{% tab header="TOML" lang="en" %}}
 ```bash
 wasmvision run -f facecount.toml
 ```
+  {{% /tab %}}
+  {{% tab header="YAML" lang="en" %}}
+```bash
+wasmvision run -f facecount.yaml
+```
+  {{< /tab >}}
+{{< /tabpane >}}
 
 Point your browser to `http://localhost:8080` and you should see that output no longer shows the face boxes for each face detected.
 
@@ -182,7 +297,10 @@ The last step is for us to blur the detected faces to protect the privacy of the
 
 Add another built-in processor named `faceblur.wasm`. This processor uses the same information that the `face-count.wasm` processor does, but with the purpose of blurring the detected faces in the resulting output.
 
-```toml
+{{< tabpane text=true >}}
+  {{% tab header="**Config**:" disabled=true /%}}
+  {{% tab header="TOML" lang="en" %}}
+  ```toml
 [main]
 logging = "warn"
 datastorage = "boltdb"
@@ -197,11 +315,39 @@ pipeline = [
 [configuration]
 detect-draw-faces="false"
 ```
+  {{% /tab %}}
+  {{% tab header="YAML" lang="en" %}}
+```yaml
+main:
+  logging: "warn"
+  datastoreage: "boltdb"
+
+processing:
+  pipeline:
+    - "facedetectyn.wasm"
+    - "face-counter.wasm"
+    - "faceblur.wasm"
+
+configuration:
+  detect-draw-faces: "false"
+```
+  {{< /tab >}}
+{{< /tabpane >}}
 
 Run the command again:
 
+{{< tabpane text=true >}}
+  {{% tab header="**Config**:" disabled=true /%}}
+  {{% tab header="TOML" lang="en" %}}
 ```bash
 wasmvision run -f facecount.toml
 ```
+  {{% /tab %}}
+  {{% tab header="YAML" lang="en" %}}
+```bash
+wasmvision run -f facecount.yaml
+```
+  {{< /tab >}}
+{{< /tabpane >}}
 
 Point your browser to `http://localhost:8080` and you should see that output now blurs each face detected.
