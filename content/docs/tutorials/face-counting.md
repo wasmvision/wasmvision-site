@@ -87,7 +87,6 @@ Change the logging to `info` so we can see the output on the terminal:
   ```toml
 [main]
 logging = "info"
-datastorage = "boltdb"
 
 [processing]
 pipeline = [
@@ -100,7 +99,6 @@ pipeline = [
 ```yaml
 main:
   logging: "info"
-  datastoreage: "boltdb"
 
 processing:
   pipeline:
