@@ -135,7 +135,7 @@ You should see output similar to the following including the JSON data of the fa
 
 Next switch to using the BoltDB database to store the face counts on disk.
 
-Add a new `datastorage` key with the value `"boltdb"` into the `main]` section.
+Add a new `datastorage` key with the value `"boltdb"` into the `main` section.
 
 Also change the logging back to `warn` to reduce the amount of output on the terminal:
 
@@ -232,7 +232,7 @@ You should see output similar to this:
 
 Now turn off the drawing of the face boxes in the output, since it is not needed.
 
-To do this add a new `[configuration]` section to the file, and set the `detect-draw-faces` key to `"false"`.
+To do this add a new `configuration` section to the file, and set the `detect-draw-faces` key to `"false"`.
 
 This configuration setting is used by the `facedetectyn.wasm` processor to turn on or off the drawing of the detected faces on the output.
 
