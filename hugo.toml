@@ -12,6 +12,7 @@ unsafe = true
 [params]
 copyright = "The Hybrid Group"
 description = "Get started with computer vision using WebAssembly"
+images = ["/images/wasmvision-logo-share.jpg"]
 
 [params.links]
 # End user relevant links. These will show up on left side of footer and in the community page if you have one.
