@@ -12,8 +12,6 @@ wasmVision includes experimental support for the [Model Context Protocol (MCP)](
 
 The MCP server implementation uses the "HTTP with SSE" transport to facilitate being used in various networking related scenarios.
 
-## Using the MCP Server
+See [using the wasmVision MCP Server](/docs/guides/mcp) for more information.
 
-To turn on the MCP server, use the `wasmvision run` command with the `--mcp-server=true` flag.
-
-You can also set the port to be used for the MCP server with the `--mcp-port` flag. For example, `--mcp-port=http://192.168.1.13:1313`
+Also see the [MCP Server Resource list](/docs/reference/mcp).

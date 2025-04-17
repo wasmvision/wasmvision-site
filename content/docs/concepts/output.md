@@ -12,6 +12,8 @@ wasmVision can output the results or processing to a stream or video file.
 
 See our [guide on output](/docs/guides/output) for details.
 
+You can also [save data to BoltDB, Redis and other datastores](/docs/concepts/datastore).
+
 ## MJPEG
 
 By default, wasmVision outputs an MJPEG stream so you can easily view the final output from processing.
