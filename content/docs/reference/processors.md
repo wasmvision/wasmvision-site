@@ -3,7 +3,7 @@
 title: "wasmVision Processors"
 linkTitle: "Processor List"
 type: "docs"
-weight: 10
+weight: 15
 description: >
   wasmVision Built-in Processors
 ---

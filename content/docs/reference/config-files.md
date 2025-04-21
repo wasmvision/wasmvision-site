@@ -7,13 +7,23 @@ description: >
   About wasmVision Config Files
 ---
 
-You can use an external TOML or YAML file to configure wasmVision. Here is an TOML example:
+You can use an external TOML or YAML file to configure wasmVision.
 
+For details on each of the different settings, please see [Settings](/docs/reference/flags)
+
+{{< tabpane text=true >}}
+  {{% tab header="**Config**:" disabled=true /%}}
+  {{% tab header="TOML" lang="en" %}}
 ```toml
 [main]
 logging = "info"
+capture = "auto"
+source = "testpattern"
+width = 640
+height = 480
+output = "mjpeg"
 destination = ":8080"
-cuda-enable = true
+cuda-enable = false
 
 [processing]
 pipeline = [
@@ -34,14 +44,18 @@ download = true
 mcp-enable = false
 mcp-port = ":5001"
 ```
-
-Here is the same configuration in YAML format:
-
+  {{% /tab %}}
+  {{% tab header="YAML" lang="en" %}}
 ```yaml
 main:
   logging: "info"
+  capture: "auto"
+  source: "testpattern"
+  width: 640
+  height: 480
+  output: "mjpeg"
   destination: ":8080"
-  cuda-enable: true
+  cuda-enable: false
 
 processing:
   pipeline:
@@ -61,3 +75,6 @@ server:
   mcp-enable: false
   mcp-port: ":5001"
 ```
+  {{< /tab >}}
+{{< /tabpane >}}
+

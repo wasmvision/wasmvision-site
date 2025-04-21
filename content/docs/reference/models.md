@@ -2,7 +2,7 @@
 title: "Vision Model List"
 linkTitle: "Model List"
 type: "docs"
-weight: 11
+weight: 16
 description: >
   List of supported computer vision models.
 ---
