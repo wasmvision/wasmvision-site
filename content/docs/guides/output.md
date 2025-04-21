@@ -25,7 +25,7 @@ wasmvision run -p hello.wasm -o mjpeg -d :8081
 
 ## Save to File
 
-wasmVision can write data to video files in several different formats.
+wasmVision can write data to image and video files in several different formats.
 
 When using wasmVision, this is configured by using the `--output=file` flag.
 
@@ -33,6 +33,18 @@ To control the file type and destination, you can use the `--destination` (`-d` 
 
 ```shell
 wasmvision run -p hello.wasm -o file -d /path/to/video/filename.avi
+```
+
+Output to a single file:
+
+```shell
+--output=file --destination=image.png
+```
+
+Output to a sequence of files:
+
+```shell
+--output=file --destination=images{id}.png
 ```
 
 ## Other streaming formats
