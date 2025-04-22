@@ -51,6 +51,8 @@ Use the built-in processors for face detection, edge detection, and other common
 
 You can also create your own processors using the Go, Rust, and C programming languages.
 
+wasmVision is open source and built using top open source projects like <a href="https://opencv.org/" target="_blank">OpenCV</a>, <a href="https://wazero.io/" target="_blank">Wazero</a>, and <a href="https://gocv.io/" target="_blank">GoCV</a>.
+
 Ready to get started? [Click here](getting-started).
 
 {{% /blocks/lead %}}
