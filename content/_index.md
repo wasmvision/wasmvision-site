@@ -30,8 +30,8 @@ It is designed to be customized and extended using WebAssembly, can run on embed
 
 {{< blocks/section color="primary-light" type="row">}}
 {{% blocks/feature icon="fa fa-video-camera" title="Capture" url="docs/concepts/capture" %}}
-    Capture video from cameras,
-    video files, or streams
+    Capture from cameras, images,
+	video files, or streams
 {{% /blocks/feature %}}
 
 {{% blocks/feature icon="fa fa-cogs" title="Process" url="docs/concepts/processors" %}}
@@ -41,7 +41,7 @@ It is designed to be customized and extended using WebAssembly, can run on embed
 
 {{% blocks/feature icon="fa fa-film" title="Output" url="docs/concepts/output" %}}
     Output results to a stream,
-	video file, or data store
+	image, video file, or data store
 {{% /blocks/feature %}}
 {{< /blocks/section >}}
 
