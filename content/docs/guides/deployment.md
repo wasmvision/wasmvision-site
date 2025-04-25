@@ -42,4 +42,24 @@ For more information, please see [CUDA](/docs/guides/cuda#docker)
 
 ## Cloud
 
-Most information on various cloud deployment scenarios is coming soon. Stay tuned!
+### Google Cloud Run jobs
+
+You can use [Google Cloud Run jobs](https://cloud.google.com/run/docs/overview/what-is-cloud-run#cloud-run-jobs) to run wasmVision on demand to process images or videos.
+
+A typical setup would first create a container image based on the wasmVision Docker container image in the [Google Cloud Artifact Registry](https://cloud.google.com/artifact-registry/docs/repositories/remote-repo). 
+
+Once the image was available in the Artifact Registry, create a new [Google Cloud Job](https://cloud.google.com/run/docs/create-jobs#job).
+
+[Execute the job with the specific parameters](https://cloud.google.com/run/docs/execute/jobs#override-job-configuration) to process each image or video file.
+
+You can also use [Google Cloud storage volume mounts](https://cloud.google.com/run/docs/configuring/jobs/cloud-storage-volume-mounts) to make available a location to read or write the image/video data.
+
+### Microsoft Azure Container Apps jobs
+
+You can use [Microsoft Azure Container Apps jobs](https://learn.microsoft.com/en-us/azure/container-apps/jobs) to run wasmVision on demand to process images or videos.
+
+One way is to [trigger a manual job](https://learn.microsoft.com/en-us/azure/container-apps/jobs?tabs=azure-cli#manual-jobs) that processes each image or video file.
+
+### Other cloud environments
+
+More information on other cloud deployment scenarios is coming soon. Stay tuned!
