@@ -120,7 +120,19 @@ https://github.com/wasmvision/wasmvision/tree/main/processors/object-detector
 
 ![ollama](/images/ollama-processor.png)
 
-Processor that obtains text descriptions of image frames, by sending frames to an [Ollama](https://ollama.com/) server running a model for generating image descriptions such as `llava`.
+Processor that calls Vision Language Models (VLMs) with image frames, by sending them to an [Ollama](https://ollama.com/) server running a VLM such as `llava`.
+
+Known supported VLMs:
+
+- [`bakllava`](https://ollama.com/library/bakllava)
+- [`gemma3`](https://ollama.com/library/gemma3)
+- [`granite3.2-vision`](https://ollama.com/library/granite3.2-vision)
+- [`llama3.2-vision`](https://ollama.com/library/llama3.2-vision)
+- [`llava`](https://ollama.com/library/llava)
+- [`llava-phi3`](https://ollama.com/library/llava-phi3)
+- [`minicpm-v`](https://ollama.com/library/minicpm-v)
+- [`moondream`](https://ollama.com/library/moondream)
+- [`nanollava`](https://ollama.com/qnguyen3/nanollava)
 
 https://github.com/wasmvision/wasmvision/tree/main/processors/ollama
 
