@@ -206,26 +206,19 @@ go install go.etcd.io/bbolt/cmd/bbolt@latest
 Now we can list the data that has been stored:
 
 ```bash
-bbolt keys facedata.db face-counter
+bbolt keys facedata.db face-counter | xargs -L1 bbolt get facedata.db face-counter
 ```
 
 You should see output similar to this:
 
-```
-2025-04-16T09:29:47.294629Z
-2025-04-16T09:29:57.340648Z
-```
-
-Use one of the keys displayed to retrieve the data:
-
-```bash
-bbolt get facedata.db face-counter 2025-04-16T09:29:47.294629Z
-```
-
-You should see output similar to this:
-
-```
-{"timestamp":"2025-04-16T09:29:47.294629Z","average-faces-seen":1}
+```json
+{"timestamp":"2025-05-06T10:45:38.515435Z","average-faces-seen":0}
+{"timestamp":"2025-05-06T10:45:48.517226Z","average-faces-seen":0}
+{"timestamp":"2025-05-06T10:45:58.52233Z","average-faces-seen":0.03}
+{"timestamp":"2025-05-06T10:46:08.552215Z","average-faces-seen":0.08305648}
+{"timestamp":"2025-05-06T10:46:18.583802Z","average-faces-seen":0.269103}
+{"timestamp":"2025-05-06T10:46:28.611602Z","average-faces-seen":0.70431894}
+{"timestamp":"2025-05-06T10:46:38.615124Z","average-faces-seen":0.32333332}
 ```
 
 ## Turn off face box drawing
